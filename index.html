@@ -3,211 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>asking out</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        /* Your CSS code here */
-        @import url(https://fonts.googleapis.com/css?family=Pacifico);
-        body{
-          background: url(https://subtlepatterns.com/patterns/noise_lines.png);
-          font-family: 'Pacifico', cursive;
-          overflow: hidden;
-          color: #fff;
-        }
-        .bgoverlay{
-          background: rgb(103,58,183);
-          background: rgba(103,58,183,0.7);
-          position: absolute;
-          top:0;
-          left:0;
-          right:0;
-          bottom:0;
-        }
-        .container{
-          position: relative;
-          margin: 120px auto 0 auto;
-          width: 320px;
-        }
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-
-        .ico{
-          display: block;
-          width: 320px;
-          height: 320px;
-        }
-        .open .ico{
-          animation: open 4s;
-          transform: scale(10);
-        }
-        .ico .title{
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          margin-left: -95px;
-          margin-top: -73px;
-          z-index: 4;
-          font-size: 50px;
-          font-family: 'Pacifico', cursive;
-          color: #fff;
-          cursor: pointer;
-          text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-        }
-        .open .ico .title{
-          opacity: 0;
-          transition: all 0.3s ease;
-          top:-100px;
-        }
-        .ico:before,
-        .ico:after,
-        .ico2:before,
-        .ico2:after{
-          position: absolute;
-          top:0;
-          left:0;
-        }
-        .ico:before,
-        .ico:after,
-        .ico2:before,
-        .ico2:after{
-          display: block;
-          font-size: 20em;
-          color: #ff4081;
-          content: "\f004";
-          font-family: FontAwesome;
-          text-rendering: auto;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale;
-        }
-        .ico2:before,
-        .ico2:after{
-          color: #e91e63;
-        }
-        .ico:before{
-          z-index: 3;
-        }
-        .ico:after{
-          animation: explode 4s infinite;
-        }
-
-
-        .ico2:before{
-          animation: explodeSmall 3s infinite;
-        }
-        .ico2:after{
-          animation: explodeSmall 2s infinite;
-        }
-
-
-        .endtext{
-          opacity:0;
-          position: absolute;
-          top:-100px;
-          width:100%;
-        }
-        .open .endtext{
-          top:0;
-          opacity: 1;
-          animation: show 5s;
-        }
-        .endtext .close{
-          position: absolute;
-          top: 0;
-          right: 0;
-          cursor: pointer;
-          text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-        }
-        .endtext h1,
-        .endtext h2,
-        .endtext h3{
-          text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-          text-align: center;
-          font-weight: normal;
-        }
-        .endtext h1{
-          font-size: 50px;
-        }
-        .endtext h2{
-          font-size: 30px;
-        }
-        .endtext h3{
-          font-size: 20px;
-        }
-
-
-        @keyframes explode {
-            from {
-              transform: scale(1);
-              opacity: 1;
-            }
-            to {
-              transform: scale(1.6);
-              opacity: 0;
-            }
-        }
-        @keyframes explodeSmall {
-            from {
-              transform: scale(1);
-              opacity: 1;
-            }
-            to {
-              transform: scale(1.2);
-              opacity: 0;
-            }
-        }
-
-
-        @keyframes open {
-            from {
-              transform: scale(1);
-            }
-            to {
-              transform: scale(10);
-            }
-        }
-
-        @keyframes show {
-            from {
-              opacity: 0;
-              top: -100px;
-            }
-            to {
-              opacity: 1;
-              top:0;
-            }
-        }
-    </style>
+    <title>Ketha Sai Karthik </title>
 </head>
-<body>
-    <!-- Your HTML content here -->
-    <div class="bgoverlay">
-        <div class="container">
-            <span class="ico">
-                <span class="ico2"></span>
-                <span class="title">Click Me</span>
-            </span>
-            <div class="endtext">
-                <span class="close" title="Restart"><i class="fa fa-times"></i></span>  
-                <h1>Hi princessssss</h1>
-                <h2>will u go out with me for a date?</h2>
-                <h3>~sai</h3>
+<body>  
+    <spline-viewer url="https://prod.spline.design/eBE73V4cpXDwtcnY/scene.splinecode"></spline-viewer>
+    <header class="header">
+        <a href="#home" class="logo">Ketha
+            <span>Sai Karthik</span></a>
+
+        <i class='bx bx-menu-alt-left' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#education">Education</a>
+            <a href="#services">Services</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, It's<span> karthik</span></h1>
+            <h3 class="text-animation">I'm a <span></span></h3>
+            <p> Welcome to my portfolio! I am a multifaceted professional specializing in web design, game development, web development, and UI/UX design. My passion lies in blending creativity and technology to create engaging and immersive digital experiences. Explore my work to see how I bring ideas to life through innovative design and development.</p>
+            <div class="social-icons">
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bxl-discord-alt'></i></a>
+            </div>
+            <div class="btn-group">
+                <a href="#" class="btn">Hire</a>
+                <a href="#contact" class="btn">Contact</a>
             </div>
         </div>
-    </div>
+            <div class="home-img">
+                <img src="pfp.png" alt="">
+            </div>
+    </section>
 
-    <!-- jQuery library -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <section class="education" id="education">
+        <h2 class="heading">Education</h2>
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023 - present date</div>
+                    <div class="timeline-content">
+                        <h3>Free lancing</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, perspiciatis porro? Accusamus libero inventore, molestiae tempore et facilis architecto consequatur.</p>
+                    </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <h3>High school</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, perspiciatis porro? Accusamus libero inventore, molestiae tempore et facilis architecto consequatur.</p>
+                    </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Your JavaScript code here -->
-    <script>
-        $(document).ready(function(){
-            $('.title').click(function(){
-                $('.container').addClass('open');
-            });
-            
-            $('.close').click(function(){
-                $('.container').removeClass('open');
-            });
-        });
-    </script>
+    <script src="script.js">
+    <spline-viewer url="https://prod.spline.design/eBE73V4cpXDwtcnY/scene.splinecode"></spline-viewer></script>
 </body>
 </html>
